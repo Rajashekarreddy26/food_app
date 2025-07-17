@@ -1,0 +1,279 @@
+/**
+ * Admin template
+ */
+.page-body {
+    border: 1px #CCC solid;
+}
+.page-title h3 {
+    font-size: 20px;
+}
+.page-title h1 {
+    margin: 0rem;
+    font-size: 1.5rem;
+}
+.page-title h4 {
+    font-size: 20px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.page-breadcrumb .breadcrumb {
+    margin-bottom: 0rem;
+}
+.border-info {
+	border-color: #0dcaf0 !important;
+}
+.border-danger {
+	border-color: #fd3550 !important;
+}
+.border-success {
+	border-color: #15ca20 !important;
+}
+.border-warning {
+	border-color: #ffc107 !important;
+}
+.text-info {
+  	color: #0dcaf0 !important;
+}
+.text-danger {
+  	color: #fd3550 !important;
+}
+.text-success {
+  	color: #15ca20 !important;
+}
+.text-warning {
+  	color: #ffc107 !important;
+}
+.radius-10 {
+    border-radius: 10px;
+}
+.widgets-icons-2 {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ededed;
+    font-size: 27px;
+    border-radius: 10px;
+}
+.card-header {
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	padding: 1rem 1.5rem;
+	background-color: transparent !important;
+}
+.card-header h2 {
+	margin: 0px;
+  	font-size: 1rem;
+}
+.card-body {
+	padding: 1.5rem;
+}
+.bg-gradient-blues {
+    background: linear-gradient(to right, #56ccf2, #2f80ed) !important;
+}
+.bg-gradient-burning {
+    background: linear-gradient(to right, #ff416c, #ff4b2b) !important;
+}
+.bg-gradient-ohhappiness {
+    background: #00b09b;
+    background: -webkit-linear-gradient( 45deg , #00b09b, #96c93d) !important;
+    background: linear-gradient( 45deg , #00b09b, #96c93d) !important;
+}
+.bg-gradient-orange {
+    background: #fc4a1a;
+    background: -webkit-linear-gradient( 45deg , #fc4a1a, #f7b733) !important;
+    background: linear-gradient( 45deg , #fc4a1a, #f7b733) !important;
+}
+.bg-gradient-quepal {
+  background: #42e695;
+  background: -webkit-linear-gradient( 45deg , #42e695, #3bb2b8) !important;
+  background: linear-gradient( 45deg , #42e695, #3bb2b8) !important;
+}
+.bg-gradient-blooker {
+  background: #ffdf40;
+  background: -webkit-linear-gradient( 45deg , #ffdf40, #ff8359) !important;
+  background: linear-gradient( 45deg , #ffdf40, #ff8359) !important;
+}
+.bg-gradient-bloody {
+  background: #f54ea2;
+  background: -webkit-linear-gradient( 45deg , #f54ea2, #ff7676) !important;
+  background: linear-gradient( 45deg , #f54ea2, #ff7676) !important;
+}
+/**
+ * Common Styles
+ */
+a {
+  text-decoration: none;
+}
+.nav-user h5 {
+  font-size: 0.85rem;
+}
+.nav-user h6 {
+  font-size: 0.75rem;
+}
+.hr1 {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top-width: 0px;
+  border-top-style: none;
+  border-top-color: currentcolor;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: 0px;
+  border-top: 1px solid #cecece;
+  opacity: .25;
+}
+.form-view-name {
+  color: var(--bs-body-color);
+  font-size: 0.875rem;
+}
+.form-view-value {
+  color: var(--bs-body-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.d-block-ruby {
+    display: block ruby;
+}
+.sub-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0rem;
+  border-bottom: 1px solid var(--bs-border-color);
+  display: inline-block;
+}
+/**
+ * Date Picker css
+ */
+.datepicker-dropdown {
+  z-index: 9999 !important;
+}
+/**
+ * Clients css
+ */
+.client-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.client-name {
+    height: 9rem;
+    width: 9rem;
+    background-color: #456bd9;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 1.25rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* loader css start */
+.loader-logo {
+    background-image: url("../../img/loader.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110px;
+}
+
+.loader-icon {
+    border-radius: 100%;
+    width: 165px;
+    height: 165px;
+    display: inline-block;
+    margin-bottom: 0 auto 25px;
+    position: relative;
+}
+
+.pre-loader {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #2f3192;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    z-index: 5;
+}
+
+.pre-loader:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #ED1D24;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+.pre-loader:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #2F3192;
+    -webkit-animation: spin 3.5s linear infinite;
+    animation: spin 3.5s linear infinite;
+}
+.pre-loader-position {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 9999;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } 
+}
+/* loader css end */

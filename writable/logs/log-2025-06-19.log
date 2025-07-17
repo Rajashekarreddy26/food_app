@@ -1,0 +1,148 @@
+INFO - 2025-06-19 09:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 09:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 11:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 11:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 16:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 16:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 16:38:12 --> mysqli_sql_exception: Table 'food_app.role' doesn't exist in /var/www/html/food_app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/food_app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /var/www/html/food_app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/food_app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/food_app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/food_app/app/Models/User/UserModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/food_app/app/Controllers/User/Login.php(42): App\Models\User\UserModel->getUserLoginDetails()
+#6 /var/www/html/food_app/system/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit()
+#7 /var/www/html/food_app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/food_app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/food_app/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-19 16:38:12 --> Table 'food_app.role' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User/UserModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/User/Login.php(42): App\Models\User\UserModel->getUserLoginDetails()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-19 11:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 16:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 17:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 17:48:42 --> mysqli_sql_exception: Table 'food_app.role' doesn't exist in /var/www/html/food_app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/food_app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /var/www/html/food_app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/food_app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/food_app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/food_app/app/Models/User/UserModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/food_app/app/Controllers/User/Login.php(42): App\Models\User\UserModel->getUserLoginDetails()
+#6 /var/www/html/food_app/system/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit()
+#7 /var/www/html/food_app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/food_app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/food_app/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-19 17:48:42 --> Table 'food_app.role' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User/UserModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/User/Login.php(42): App\Models\User\UserModel->getUserLoginDetails()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-19 17:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 17:52:34 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 930.
+ 1 SYSTEMPATH/BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/User/Login.php(47): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-19 17:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 17:56:50 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 930.
+ 1 SYSTEMPATH/BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/User/Login.php(47): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-19 18:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-19 18:00:15 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/Controllers/User/Login.php on line 48.
+ 1 APPPATH/Controllers/User/Login.php(48): explode(',', null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit('loginSubmit')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-19 18:00:15 --> Undefined array key "name"
+in APPPATH/Controllers/User/Login.php on line 52.
+ 1 APPPATH/Controllers/User/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-19 18:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-19 18:00:45 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/Controllers/User/Login.php on line 48.
+ 1 APPPATH/Controllers/User/Login.php(48): explode(',', null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit('loginSubmit')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-19 18:00:45 --> Undefined array key "phone"
+in APPPATH/Controllers/User/Login.php on line 55.
+ 1 APPPATH/Controllers/User/Login.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-19 18:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-19 18:01:00 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/Controllers/User/Login.php on line 48.
+ 1 APPPATH/Controllers/User/Login.php(48): explode(',', null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit('loginSubmit')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-19 12:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 12:31:00 --> mysqli_sql_exception: Table 'food_app.module' doesn't exist in /var/www/html/food_app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/food_app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /var/www/html/food_app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/food_app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/food_app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/food_app/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/food_app/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /var/www/html/food_app/app/Libraries/Authentication.php(69): CodeIgniter\BaseModel->first()
+#7 /var/www/html/food_app/app/Libraries/Authentication.php(50): App\Libraries\Authentication->getModuleId()
+#8 /var/www/html/food_app/app/Filters/ModuleAuth.php(26): App\Libraries\Authentication->checkModuleAccess()
+#9 /var/www/html/food_app/system/Filters/Filters.php(184): App\Filters\ModuleAuth->before()
+#10 /var/www/html/food_app/system/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+#11 /var/www/html/food_app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/food_app/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-06-19 12:31:00 --> Table 'food_app.module' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Libraries/Authentication.php(69): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Libraries/Authentication.php(50): App\Libraries\Authentication->getModuleId()
+ 6 APPPATH/Filters/ModuleAuth.php(26): App\Libraries\Authentication->checkModuleAccess()
+ 7 SYSTEMPATH/Filters/Filters.php(184): App\Filters\ModuleAuth->before()
+ 8 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

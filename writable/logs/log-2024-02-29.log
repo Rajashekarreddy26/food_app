@@ -1,0 +1,147 @@
+ERROR - 2024-02-29 11:32:42 --> mysqli_sql_exception: Unknown column 'invoice.credit' in 'where clause' in /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount(Array)
+#6 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+#7 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+#8 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/c30077_004/htdocs/meilInvoiceTracker/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-29 11:32:42 --> Unknown column 'invoice.credit' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `invoice`
+LEFT JOIN `project` `p` ON `p`.`id` = `invoice`.`project_id`
+LEFT JOIN `client` `c` ON `c`.`id` = `p`.`client`
+WHERE (ifnull(invoice.total,0)- ifnull(invoice.tds,0)- ifnull(invoice.tds_sgst,0)- ifnull(invoice.tds_cgst,0)- ifnull(invoice.labour_cess,0)- ifnull(invoice.other_deductions,0)+ ifnull(invoice.credit,0)- ifnull(invoice.total_received,0)) < 10', [], false)
+ 2 APPPATH/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount([...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-29 11:33:36 --> mysqli_sql_exception: Unknown column 'invoice.credit' in 'where clause' in /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount(Array)
+#6 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+#7 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+#8 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/c30077_004/htdocs/meilInvoiceTracker/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-29 11:33:36 --> Unknown column 'invoice.credit' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `invoice`
+LEFT JOIN `project` `p` ON `p`.`id` = `invoice`.`project_id`
+LEFT JOIN `client` `c` ON `c`.`id` = `p`.`client`
+WHERE (ifnull(invoice.total,0)- ifnull(invoice.tds,0)- ifnull(invoice.tds_sgst,0)- ifnull(invoice.tds_cgst,0)- ifnull(invoice.labour_cess,0)- ifnull(invoice.other_deductions,0)+ ifnull(invoice.credit,0)- ifnull(invoice.total_received,0)) < 10', [], false)
+ 2 APPPATH/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount([...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-29 11:34:01 --> mysqli_sql_exception: Unknown column 'invoice.credit' in 'where clause' in /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount(Array)
+#6 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+#7 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+#8 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/c30077_004/htdocs/meilInvoiceTracker/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-29 11:34:01 --> Unknown column 'invoice.credit' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `invoice`
+LEFT JOIN `project` `p` ON `p`.`id` = `invoice`.`project_id`
+LEFT JOIN `client` `c` ON `c`.`id` = `p`.`client`
+WHERE (ifnull(invoice.total,0)- ifnull(invoice.tds,0)- ifnull(invoice.tds_sgst,0)- ifnull(invoice.tds_cgst,0)- ifnull(invoice.labour_cess,0)- ifnull(invoice.other_deductions,0)+ ifnull(invoice.credit,0)- ifnull(invoice.total_received,0)) < 10', [], false)
+ 2 APPPATH/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount([...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-29 11:34:25 --> mysqli_sql_exception: Unknown column 'invoice.credit' in 'where clause' in /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount(Array)
+#6 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+#7 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+#8 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/c30077_004/htdocs/meilInvoiceTracker/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-29 11:34:25 --> Unknown column 'invoice.credit' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `invoice`
+LEFT JOIN `project` `p` ON `p`.`id` = `invoice`.`project_id`
+LEFT JOIN `client` `c` ON `c`.`id` = `p`.`client`
+WHERE (ifnull(invoice.total,0)- ifnull(invoice.tds,0)- ifnull(invoice.tds_sgst,0)- ifnull(invoice.tds_cgst,0)- ifnull(invoice.labour_cess,0)- ifnull(invoice.other_deductions,0)+ ifnull(invoice.credit,0)- ifnull(invoice.total_received,0)) < 10', [], false)
+ 2 APPPATH/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount([...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-29 11:34:26 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, null given, called in /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/InvoiceModel.php on line 91
+in SYSTEMPATH/Database/BaseBuilder.php on line 1437.
+ 1 APPPATH/Models/InvoiceTracking/InvoiceModel.php(91): CodeIgniter\Database\BaseBuilder->orderBy(null, null)
+ 2 APPPATH/Controllers/InvoiceTracking/Invoice.php(98): App\Models\InvoiceTracking\InvoiceModel->getInvoices([...])
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-29 06:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 06:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-29 11:35:17 --> mysqli_sql_exception: Unknown column 'invoice.credit' in 'where clause' in /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount(Array)
+#6 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+#7 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+#8 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/c30077_004/htdocs/meilInvoiceTracker/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-29 11:35:17 --> Unknown column 'invoice.credit' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `invoice`
+LEFT JOIN `project` `p` ON `p`.`id` = `invoice`.`project_id`
+LEFT JOIN `client` `c` ON `c`.`id` = `p`.`client`
+WHERE (ifnull(invoice.total,0)- ifnull(invoice.tds,0)- ifnull(invoice.tds_sgst,0)- ifnull(invoice.tds_cgst,0)- ifnull(invoice.labour_cess,0)- ifnull(invoice.other_deductions,0)+ ifnull(invoice.credit,0)- ifnull(invoice.total_received,0)) < 10', [], false)
+ 2 APPPATH/Models/InvoiceTracking/InvoiceModel.php(78): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH/Controllers/InvoiceTracking/Invoice.php(97): App\Models\InvoiceTracking\InvoiceModel->getInvoicesCount([...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Invoice->body('body')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Invoice))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-29 06:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 06:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 06:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 06:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 06:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 06:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-29 06:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

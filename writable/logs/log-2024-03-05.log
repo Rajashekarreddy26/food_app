@@ -1,0 +1,28 @@
+ERROR - 2024-03-05 11:19:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 7 in /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `project...', 0)
+#1 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `project...')
+#2 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `project...')
+#3 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `project...', Array, false)
+#4 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/BankGuaranteeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Controllers/InvoiceTracking/BankGuarantee.php(50): App\Models\InvoiceTracking\BankGuaranteeModel->getBankGuarantees(Array)
+#6 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(942): App\Controllers\InvoiceTracking\BankGuarantee->bgBody('bgBody')
+#7 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\BankGuarantee))
+#8 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/c30077_004/htdocs/meilInvoiceTracker/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-05 11:19:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 7
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `project_bg`.*, `p`.`name` as `project_name`, `p`.`code` as `project_code`, `bt`.`name` as `bg_type`
+FROM `project_bg`
+LEFT JOIN `project` `p` ON `p`.`id` = `project_bg`.`project_id`
+LEFT JOIN `bg_type` `bt` ON `bt`.`id` = `project_bg`.`type`
+WHERE `project_bg`.`deleted_at` IS NULL
+ORDER BY `project_bg`.`created_at` DESC
+ LIMIT -20, 20', [], false)
+ 2 APPPATH/Models/InvoiceTracking/BankGuaranteeModel.php(118): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/InvoiceTracking/BankGuarantee.php(50): App\Models\InvoiceTracking\BankGuaranteeModel->getBankGuarantees([...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\BankGuarantee->bgBody('bgBody')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\BankGuarantee))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

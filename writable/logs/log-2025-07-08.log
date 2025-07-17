@@ -1,0 +1,41 @@
+INFO - 2025-07-08 17:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-08 22:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-08 22:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-08 22:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-08 22:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-08 22:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-08 22:31:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/Controllers/User/Login.php on line 48.
+ 1 APPPATH/Controllers/User/Login.php(48): explode(',', null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit('loginSubmit')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-07-08 17:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-08 17:01:43 --> mysqli_sql_exception: Table 'food_app.module' doesn't exist in /var/www/html/food_app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/food_app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /var/www/html/food_app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/food_app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/food_app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/food_app/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/food_app/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /var/www/html/food_app/app/Libraries/Authentication.php(69): CodeIgniter\BaseModel->first()
+#7 /var/www/html/food_app/app/Libraries/Authentication.php(50): App\Libraries\Authentication->getModuleId()
+#8 /var/www/html/food_app/app/Filters/ModuleAuth.php(26): App\Libraries\Authentication->checkModuleAccess()
+#9 /var/www/html/food_app/system/Filters/Filters.php(184): App\Filters\ModuleAuth->before()
+#10 /var/www/html/food_app/system/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+#11 /var/www/html/food_app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/food_app/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-07-08 17:01:43 --> Table 'food_app.module' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Libraries/Authentication.php(69): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Libraries/Authentication.php(50): App\Libraries\Authentication->getModuleId()
+ 6 APPPATH/Filters/ModuleAuth.php(26): App\Libraries\Authentication->checkModuleAccess()
+ 7 SYSTEMPATH/Filters/Filters.php(184): App\Filters\ModuleAuth->before()
+ 8 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

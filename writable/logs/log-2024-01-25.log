@@ -1,0 +1,108 @@
+CRITICAL - 2024-01-25 12:21:23 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(88): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->create('create')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:21:26 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(88): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->create('create')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:21:27 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(88): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->create('create')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:21:28 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(88): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->create('create')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:21:30 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(88): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->create('create')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:21:36 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(88): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->create('create')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:21:57 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(140): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->delete('delete')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:22:08 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(140): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->delete('delete')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:22:13 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(140): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->delete('delete')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:22:22 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(140): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->delete('delete')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:22:28 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(140): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->delete('delete')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 12:22:35 --> Invalid file: "alert_modal.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alert_modal.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alert_modal', [], true)
+ 3 APPPATH/Controllers/InvoiceTracking/Client.php(140): view('alert_modal', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->delete('delete')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InvoiceTracking\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

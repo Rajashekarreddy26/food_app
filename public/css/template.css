@@ -1,0 +1,9 @@
+/**
+ * Admin template
+ */
+.page-body {
+    border: 1px #CCC solid;
+}
+.page-title h3 {
+    font-size: 20px;
+}

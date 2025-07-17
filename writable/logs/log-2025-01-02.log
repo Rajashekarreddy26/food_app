@@ -1,0 +1,50 @@
+ERROR - 2025-01-02 18:34:38 --> mysqli_sql_exception: Unknown column 'invoice_amount' in 'field list' in /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT SUM(invo...', 0)
+#1 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(invo...')
+#2 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(invo...')
+#3 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT SUM(invo...', Array, false)
+#4 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/InvoiceModel.php(292): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Controllers/Home.php(43): App\Models\InvoiceTracking\InvoiceModel->getProjectTotals()
+#6 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/c30077_004/htdocs/meilInvoiceTracker/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-02 18:34:38 --> Unknown column 'invoice_amount' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT SUM(invoice_amount) as basic_amount, SUM(total) as invoice_amount, `project_id`
+FROM `project`
+WHERE `deleted_at` IS NULL
+GROUP BY `project_id`', [], false)
+ 2 APPPATH/Models/InvoiceTracking/InvoiceModel.php(292): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(43): App\Models\InvoiceTracking\InvoiceModel->getProjectTotals()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-02 18:34:59 --> mysqli_sql_exception: Unknown column 'invoice_amount' in 'field list' in /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT SUM(invo...', 0)
+#1 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(invo...')
+#2 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(invo...')
+#3 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT SUM(invo...', Array, false)
+#4 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Models/InvoiceTracking/InvoiceModel.php(292): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/c30077_004/htdocs/meilInvoiceTracker/app/Controllers/Home.php(43): App\Models\InvoiceTracking\InvoiceModel->getProjectTotals()
+#6 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/c30077_004/htdocs/meilInvoiceTracker/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/c30077_004/htdocs/meilInvoiceTracker/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-02 18:34:59 --> Unknown column 'invoice_amount' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT SUM(invoice_amount) as basic_amount, SUM(total) as invoice_amount, `project_id`
+FROM `project`
+WHERE `deleted_at` IS NULL
+GROUP BY `project_id`', [], false)
+ 2 APPPATH/Models/InvoiceTracking/InvoiceModel.php(292): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(43): App\Models\InvoiceTracking\InvoiceModel->getProjectTotals()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
