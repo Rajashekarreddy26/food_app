@@ -28,7 +28,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'root',
-        'password'     => 'HighGoUser@123',
+        'password'     => 'RootUser@123',
         'database'     => 'food_app',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',

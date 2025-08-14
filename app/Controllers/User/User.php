@@ -24,9 +24,9 @@ class User extends BaseController
 	{
 		$data['params'] = array(
 			'keywords' => '',
-			'rows' => 10,
+			'rows' => 20,
 			'pageno' => 1,
-			'sort_by' => 'id',
+			'sort_by' => 'fname',
 			'sort_order' => 'desc',
 		);
 		$data['users'] = $this->userModel->getUsers($data['params']);

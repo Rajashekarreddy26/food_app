@@ -87,7 +87,7 @@ $total_pages = ceil($tRecords/$rows);
 		<thead>
 			<tr>
 				<th width="1%" class="text-center">S.No.</th>
-				<th nowrap>User Code</th>
+				<th nowrap>User Type</th>
 				<th nowrap>Username</th>
 				<th nowrap>Name</th>
 				<th nowrap>Email</th>
@@ -104,11 +104,11 @@ $total_pages = ceil($tRecords/$rows);
 				 ?>
 				<tr>
 					<td class="text-center"><?= $i++; ?></td>
-					<td><?= $value['user_code']; ?></td>
+					<td><?= $value['emp_id']; ?></td>
 					<td><?= $value['username']; ?></td>
-					<td><?= $value['name']; ?></td>
+					<td><?= $value['fname']." ".$value['lname']; ?></td>
 					<td><?= $value['email']; ?></td>
-					<td><?= $value['phone']; ?></td>
+					<td><?= $value['mobile']; ?></td>
 					<td><?= $roles[$value['role']]['name']; ?></td>
 					<td class="text-center">
 						<? if(!in_array($value['id'], [1,2])): ?>

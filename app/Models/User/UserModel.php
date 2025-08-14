@@ -55,12 +55,12 @@ class UserModel extends Model
 		$builder->select('*');
 		if(isset($params['keywords']) and $params['keywords'] != '') {
 			$builder->groupStart();
-			$builder->like('name', $params['keywords']);
+			$builder->like('fname', $params['keywords']);
+			$builder->orLike('lname', $params['keywords']);
 			$builder->orLike('username', $params['keywords']);
-			$builder->orLike('user_code', $params['keywords']);
-			$builder->orLike('name', $params['keywords']);
+			$builder->orLike('emp_id', $params['keywords']);
 			$builder->orLike('email', $params['keywords']);
-			$builder->orLike('phone', $params['keywords']);
+			$builder->orLike('mobile', $params['keywords']);
 			$builder->groupEnd();
 		}
 		$builder->where('deleted_at', NULL);
@@ -78,12 +78,12 @@ class UserModel extends Model
 		$builder->select('count(id) as trecords');
 		if(isset($params['keywords']) and $params['keywords'] != '') {
 			$builder->groupStart();
-			$builder->like('name', $params['keywords']);
+			$builder->like('fname', $params['keywords']);
+			$builder->orLike('lname', $params['keywords']);
 			$builder->orLike('username', $params['keywords']);
-			$builder->orLike('user_code', $params['keywords']);
-			$builder->orLike('name', $params['keywords']);
+			$builder->orLike('emp_id', $params['keywords']);
 			$builder->orLike('email', $params['keywords']);
-			$builder->orLike('phone', $params['keywords']);
+			$builder->orLike('mobile', $params['keywords']);
 			$builder->groupEnd();
 		}
 		$builder->where('deleted_at', NULL);
