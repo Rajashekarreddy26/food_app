@@ -1,0 +1,75 @@
+INFO - 2025-07-22 06:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 12:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 11:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 16:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 16:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-22 16:38:18 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/Controllers/User/Login.php on line 48.
+ 1 APPPATH/Controllers/User/Login.php(48): explode(',', null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\Login->loginSubmit('loginSubmit')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-07-22 11:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 11:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-22 16:38:22 --> Undefined array key ",1,"
+in APPPATH/Views/user/users/users_body.php on line 112.
+ 1 APPPATH/Views/user/users/users_body.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/food_app/app/Views/user/users/users_body.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/user/users/users.php(9): view()
+ 6 SYSTEMPATH/View/View.php(228): include('/var/www/html/food_app/app/Views/user/users/users.php')
+ 7 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/User/User.php(43): view()
+10 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\User->index()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-07-22 11:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 11:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 11:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 11:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 11:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 11:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-22 11:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-22 16:44:17 --> Undefined array key ",1,"
+in APPPATH/Views/user/users/users_body.php on line 112.
+ 1 APPPATH/Views/user/users/users_body.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/food_app/app/Views/user/users/users_body.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/user/users/users.php(9): view()
+ 6 SYSTEMPATH/View/View.php(228): include('/var/www/html/food_app/app/Views/user/users/users.php')
+ 7 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/User/User.php(43): view()
+10 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User\User->index()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2025-07-22 11:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-22 16:44:57 --> mysqli_sql_exception: Table 'food_app.client' doesn't exist in /var/www/html/food_app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/food_app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /var/www/html/food_app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/food_app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/food_app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/food_app/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/food_app/system/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/food_app/app/Controllers/InvoiceTracking/Client.php(34): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/food_app/system/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->index()
+#8 /var/www/html/food_app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/food_app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/food_app/public/index.php(80): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-07-22 16:44:57 --> Table 'food_app.client' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/InvoiceTracking/Client.php(34): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\InvoiceTracking\Client->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
